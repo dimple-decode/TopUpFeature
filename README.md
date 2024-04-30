@@ -12,7 +12,7 @@ Implemented a topup functionality for the users
 
    User {
    Id: 2,
-   Balance: 3
+   Balance: 10000
    }
 
    
