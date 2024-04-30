@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopUpService.API", "TopUpService.API\TopUpService.API.csproj", "{649C99C1-DDD0-41F3-9462-D5822AA99514}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopUpService.Common", "TopUpService.Common\TopUpService.Common.csproj", "{58E99327-F7A5-4492-B8A8-C1E1B30C0702}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopUpService.Data", "TopUpService.Data\TopUpService.Data.csproj", "{247B034A-00C0-40E0-87FC-F680DEC5EE68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopUpService.Database", "TopUpService.Database\TopUpService.Database.csproj", "{4206E5AA-A3F8-4BEA-ABB7-591B4A9C6035}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopUpService.DTO", "TopUpService.DTO\TopUpService.DTO.csproj", "{652579B1-9602-49EF-8B57-D8BD59F2AA11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopUpService.Logic", "TopUpService.Logic\TopUpService.Logic.csproj", "{C1CAD432-5A7C-4DAE-ACEE-9367F22FA01E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{649C99C1-DDD0-41F3-9462-D5822AA99514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{649C99C1-DDD0-41F3-9462-D5822AA99514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{649C99C1-DDD0-41F3-9462-D5822AA99514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{649C99C1-DDD0-41F3-9462-D5822AA99514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58E99327-F7A5-4492-B8A8-C1E1B30C0702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58E99327-F7A5-4492-B8A8-C1E1B30C0702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58E99327-F7A5-4492-B8A8-C1E1B30C0702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58E99327-F7A5-4492-B8A8-C1E1B30C0702}.Release|Any CPU.Build.0 = Release|Any CPU
+		{247B034A-00C0-40E0-87FC-F680DEC5EE68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{247B034A-00C0-40E0-87FC-F680DEC5EE68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{247B034A-00C0-40E0-87FC-F680DEC5EE68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{247B034A-00C0-40E0-87FC-F680DEC5EE68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4206E5AA-A3F8-4BEA-ABB7-591B4A9C6035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4206E5AA-A3F8-4BEA-ABB7-591B4A9C6035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4206E5AA-A3F8-4BEA-ABB7-591B4A9C6035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4206E5AA-A3F8-4BEA-ABB7-591B4A9C6035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{652579B1-9602-49EF-8B57-D8BD59F2AA11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{652579B1-9602-49EF-8B57-D8BD59F2AA11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{652579B1-9602-49EF-8B57-D8BD59F2AA11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{652579B1-9602-49EF-8B57-D8BD59F2AA11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1CAD432-5A7C-4DAE-ACEE-9367F22FA01E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1CAD432-5A7C-4DAE-ACEE-9367F22FA01E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1CAD432-5A7C-4DAE-ACEE-9367F22FA01E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1CAD432-5A7C-4DAE-ACEE-9367F22FA01E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDD75F4E-8C1A-42C7-8297-BE07C4D9E5F3}
+	EndGlobalSection
+EndGlobal
