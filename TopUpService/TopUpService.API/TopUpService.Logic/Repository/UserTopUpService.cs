@@ -40,6 +40,10 @@ namespace TopUpService.Logic
         /// <returns></returns>
         public async Task<Tuple<bool, string>> AddBeneficiaryAsync(AddBeneficiaryRequest request)
         {
+            //Check if the user is valid
+            var user = await _userRepository.GetUserByIdAsync(request.UserId);
+            if (user == null) return new Tuple<bool, string>(false, "User Not Found");
+
             var beneficiaries = await _beneficiaryRepository.GetBeneficiaryByUserIdAsync(request.UserId);
 
             //Check if the user is null or have more than 5 beneficiaries
@@ -95,6 +99,10 @@ namespace TopUpService.Logic
             //Check if the user is valid
             var user = await _userRepository.GetUserByIdAsync(request.UserId);
             if(user == null) return new Tuple<bool, string>(false, "User Not Found");
+
+            //Check if the beneficiary is valid
+            var beneficiary = await _beneficiaryRepository.GetBeneficiaryAsync(request.BeneficiaryId, request.UserId);
+            if (beneficiary == null) return new Tuple<bool, string>(false, "Beneficiary Not Found");
 
             //Fetch the user Balance from external Http Service
             var httpResponse = await _userTransactionHttpService.GetUserBalanceAsync(request.UserId);
