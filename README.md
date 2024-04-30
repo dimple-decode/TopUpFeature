@@ -15,5 +15,7 @@ Implemented a topup functionality for the users
    Balance: 10000
    }
 
+3. You can add/update these users in the Transaction Service Project.
+
    
    
