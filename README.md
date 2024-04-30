@@ -8,12 +8,12 @@ Implemented a topup functionality for the users
    User {
        Id: 1,
        Balance: 20000
-   }
+   } -> This is a verified user
 
    User {
    Id: 2,
    Balance: 10000
-   }
+   } -> This is not verified user
 
 3. You can add/update these users in the Transaction Service Project.
 
