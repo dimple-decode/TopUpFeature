@@ -44,14 +44,18 @@ namespace TopUpService.API.Controllers
                 }
                                                                 ));
 
-            var result = await _topUpService.AddBeneficiaryAsync(request);
-            if(!result.Item1) return BadRequest(result.Item2);
+            var response = new AddBeneficiaryResponse();
 
-            var response = new AddBeneficiaryResponse()
+            var result = await _topUpService.AddBeneficiaryAsync(request);
+            if (!result.Item1)
             {
-                IsSuccess = true,
-                Message = result.Item2
-            };
+                response.ErrorMessage = result.Item2;
+                return BadRequest(response);
+            }
+
+            response.IsSuccess = true;
+            response.Message = result.Item2;
+           
             return Ok(response);
         }
 

@@ -10,5 +10,6 @@ namespace TopUpService.Data
     {
         Task AddBeneficiaryAsync(AddBeneficiaryRequest request);
         Task<List<Beneficiary>> GetBeneficiaryByUserIdAsync(int userId);
+        Task<Beneficiary?> GetBeneficiaryAsync(int id, int userId);
     }
 }

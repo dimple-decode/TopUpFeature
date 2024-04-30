@@ -46,5 +46,10 @@ namespace TopUpService.Data
         {
             return await _dbContext.Set<T>().Where(exp).ToListAsync();
         }
+
+        public async Task<T?> GetEntityAsync(Expression<Func<T, bool>> exp)
+        {
+            return await _dbContext.Set<T>().Where(exp).FirstOrDefaultAsync();
+        }
     }
 }

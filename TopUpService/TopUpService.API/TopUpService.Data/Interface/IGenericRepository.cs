@@ -14,5 +14,6 @@ namespace TopUpService.Data
         void Delete(T entity);
         void Update(T entity);
         Task<List<T>> GetListAsync(Expression<Func<T, bool>> exp);
+        Task<T> GetEntityAsync(Expression<Func<T, bool>> exp);
     }
 }

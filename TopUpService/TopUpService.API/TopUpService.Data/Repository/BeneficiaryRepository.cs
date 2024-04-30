@@ -41,5 +41,16 @@ namespace TopUpService.Data
             var beneficiaries = await GetListAsync(x=>x.UserId.Equals(userId) && x.IsActive);
             return beneficiaries;
         }
+
+        /// <summary>
+        /// Get Beneficiary By Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public async Task<Beneficiary?> GetBeneficiaryAsync(int id, int userId)
+        {
+            var beneficiary = await GetEntityAsync(x=>x.Id.Equals(id) && x.UserId.Equals(userId) && x.IsActive);
+            return beneficiary;
+        }
     }
 }
